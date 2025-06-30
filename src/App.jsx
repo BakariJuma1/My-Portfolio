@@ -1,16 +1,23 @@
-import React, { useState } from "react";
-import Navbar from "./ui/Navbar";
-import MobileMenu from "./ui/MobileMenu";
-import LoadingScreenAnimation from "./ui/LoadingScreenAnimation";
+import Navbar from "./components/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Project from "./sections/Project";
+import Contact from "./sections/Contact";
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <>
-      <LoadingScreenAnimation />
-      <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-    </>
+    <div className="font-sans">
+      <Navbar />
+      <Hero />
+      <About />
+      <Project />
+      <Contact />
+      
+      {/* <main className="p-8 text-center text-gray-700">
+        <h2 className="text-2xl font-semibold">Welcome to My Portfolio</h2>
+        <p className="mt-2">Let's build something awesome.</p>
+      </main> */}
+    </div>
   );
 }
 
