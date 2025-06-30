@@ -1,8 +1,8 @@
 export default function About() {
   const techStack = [
-    'JavaScript', 'TypeScript', 'React', 'Next.js', 
-    'Node.js', 'Python', 'Flask', 'PostgreSQL',
-    'MongoDB', 'Tailwind CSS', 'Git', 'Docker'
+    'JavaScript', 'React','CSS', 'HTML',
+     'Python', 'Flask', 'PostgreSQL',
+     'Tailwind CSS', 'Git', 'Github'
   ];
 
   return (
@@ -20,9 +20,7 @@ export default function About() {
             <p>
               My journey in tech started with a curiosity about how things work, which evolved into building applications that solve real-world challenges. I believe in writing clean, maintainable code that stands the test of time.
             </p>
-            <p>
-              When I'm not coding, you'll find me contributing to open source, mentoring junior developers, or exploring new technologies in the ever-evolving web ecosystem.
-            </p>
+           
           </div>
         </div>
 
@@ -43,20 +41,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Optional experience timeline or metrics */}
-        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          {[
-            { value: '5+', label: 'Years Experience' },
-            { value: '30+', label: 'Projects Completed' },
-            { value: '∞', label: 'Cups of Coffee' },
-            { value: '100%', label: 'Passion' }
-          ].map((item) => (
-            <div key={item.label} className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
-              <p className="text-3xl font-bold text-blue-600 dark:text-blue-400">{item.value}</p>
-              <p className="text-gray-600 dark:text-gray-400 mt-2">{item.label}</p>
-            </div>
-          ))}
-        </div> */}
+     
       </div>
     </section>
   );

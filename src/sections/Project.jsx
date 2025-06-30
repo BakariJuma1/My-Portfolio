@@ -3,21 +3,21 @@ const projects = [
   {
     title: "SomaPoa Bursary App",
     description: "A fullstack bursary application system with role-based access control, document verification, and real-time notifications. Built with Flask backend and React frontend.",
-    tech: ["React", "Flask", "PostgreSQL", "Tailwind CSS"],
+    tech: ["React", "Flask", "PostgreSQL", " CSS","Alembic", "SQLAlchemy"],
     liveLink: "https://somapoa.netlify.app",
     github: "https://github.com/BakariJuma1/SomaPoa",
   },
   {
     title: "County Permit Tracker",
     description: "Command-line interface for managing business permits with automated renewal reminders, payment tracking, and reporting features.",
-    tech: ["Python", "SQLAlchemy", "Click", "Rich"],
+    tech: ["Python", "SQLAlchemy", "Click", "Rich", "SQLite","Alembic"],
     github: "https://github.com/BakariJuma1/county-permit-tracker",
   },
   {
-    title: "Supa Fundi",
-    description: "Tinder-style job matching platform connecting tradespeople with clients, featuring geolocation and instant messaging capabilities.",
-    tech: ["JavaScript", "Mapbox API", "Firebase"],
-    github: "https://github.com/BakariJuma1/Supa-Fundi",
+    title: "PaySync",
+    description: "Managing debts manually can get messy especially in small businesses like hardware stores, shops, or local service providers. This app was born out of that frustration. It's a simple, web-based debt tracker that helps store owners and freelancers keep accurate records of who owes what, and when.",
+    tech: ["HTML", "React", "CSS"],
+    github: "https://github.com/BakariJuma1/Debt-management-app-",
   },
 ];
 

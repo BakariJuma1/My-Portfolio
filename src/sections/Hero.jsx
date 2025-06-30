@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 dark:bg-gray-800 px-6 py-20 overflow-hidden">
-      {/* Optional decorative elements */}
+    
       <div className="absolute inset-0 overflow-hidden opacity-10 dark:opacity-5">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
@@ -23,7 +23,7 @@ export default function Hero() {
         <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
           I craft clean, scalable web applications with thoughtful architecture and 
           delightful user experiences. Currently focused on building tools that 
-          solve real problems for real people.
+          solve real problems.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6">
@@ -42,7 +42,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator for desktop */}
       <div className="absolute bottom-8 hidden md:block animate-bounce">
         <svg className="w-6 h-6 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />

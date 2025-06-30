@@ -59,7 +59,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white transition-all duration-300"
-                placeholder="John Doe"
+                placeholder="Ken ...."
               />
             </div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-white transition-all duration-300"
-                placeholder="you@example.com"
+                placeholder="ken@example.com"
               />
             </div>
 
@@ -132,7 +132,7 @@ export default function Contact() {
               
               <div className="space-y-4">
                 <a
-                  href="mailto:bakari@example.com"
+                  href="mailto:jumaisaq@gmail.com"
                   className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
                 >
                   <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 p-3 rounded-full">
@@ -164,7 +164,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/bakari-juma1/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
@@ -176,7 +176,7 @@ export default function Contact() {
                   </div>
                   <div className="text-left">
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">LinkedIn</p>
-                    <p className="text-gray-900 dark:text-white">linkedin.com/in/yourprofile</p>
+                    <p className="text-gray-900 dark:text-white">https://www.linkedin.com/in/bakari-juma1/</p>
                   </div>
                 </a>
               </div>
