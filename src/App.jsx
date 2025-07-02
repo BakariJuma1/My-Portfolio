@@ -6,17 +6,14 @@ import Contact from "./sections/Contact";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Navbar />
-      <Hero />
-      <About />
-      <Project />
-      <Contact />
-      
-      {/* <main className="p-8 text-center text-gray-700">
-        <h2 className="text-2xl font-semibold">Welcome to My Portfolio</h2>
-        <p className="mt-2">Let's build something awesome.</p>
-      </main> */}
+      <main>
+        <Hero />
+        <About />
+        <Project />
+        <Contact />
+      </main>
     </div>
   );
 }
