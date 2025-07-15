@@ -26,6 +26,15 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a 
+              href="/isaac_juma_fullstack_role.pdf" 
+              download 
+              className="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            >
+              CV
+            </a>
+          </li>
         </ul>
 
         {/* Mobile menu button (hamburger) */}
@@ -61,6 +70,14 @@ export default function Navbar() {
               {item}
             </a>
           ))}
+          <a
+            href="/isaac_juma_fullstack_role.pdf"
+            download
+            className="block px-4 py-2 text-gray-700 dark:text-gray-300 font-medium hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-300"
+            onClick={() => setMenuOpen(false)}
+          >
+            CV
+          </a>
         </div>
       )}
     </nav>

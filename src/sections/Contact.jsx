@@ -34,7 +34,7 @@ export default function Contact() {
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Ready to bring someone onboard who gets things done?<br />
-            I’d love to hear from you—let’s chat.
+            I’d love to hear from you let’s chat.
           </p>
         </div>
 
