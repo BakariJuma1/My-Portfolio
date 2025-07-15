@@ -3,7 +3,7 @@ export default function Projects() {
     {
       title: "SomaPoa Bursary App",
       description:
-        "A fullstack bursary application system with role-based access control, document verification, and real-time notifications. Built with Flask backend and React frontend.",
+        "SomaPoa is a fullstack bursary application system built to streamline how students apply for financial aid and how administrators manage applications. It features role-based access control (admin vs. student), secure document uploads, application status tracking, and real-time email notifications. The backend is powered by Flask, PostgreSQL, and SQLAlchemy with Alembic migrations, while the frontend is built in React with responsive UI components. This project was inspired by gaps in existing school funding workflows and aims to digitize and secure the entire bursary process.",
       tech: ["React", "Flask", "PostgreSQL", "CSS", "Alembic", "SQLAlchemy"],
       liveLink: "https://somapoa.netlify.app",
       github: "https://github.com/BakariJuma1/SomaPoa",
@@ -12,7 +12,7 @@ export default function Projects() {
     {
       title: "County Permit Tracker",
       description:
-        "Command-line interface for managing business permits with automated renewal reminders, payment tracking, and reporting features.",
+        "County Permit Tracker is a command-line tool designed for local government officers or registry clerks to manage business permits efficiently. It helps users register businesses, issue permits, track renewal dates, calculate fees, and generate reports. Built with Python, SQLAlchemy, and Alembic, it includes colorful terminal outputs using rich for a smooth user experience. This project was inspired by real-world challenges faced by local permit offices in maintaining up-to-date records and reducing manual errors..",
       tech: ["Python", "SQLAlchemy", "Click", "Rich", "SQLite", "Alembic"],
       github: "https://github.com/BakariJuma1/county-permit-tracker",
       image: "/images/permit-tracker.png",
@@ -20,10 +20,11 @@ export default function Projects() {
     {
       title: "PaySync",
       description:
-        "Managing debts manually can get messy especially in small businesses like hardware stores, shops, or local service providers. This app was born out of that frustration. It's a simple, web-based debt tracker that helps store owners and freelancers keep accurate records of who owes what, and when.",
+        "PaySync is a lightweight debt management web app built for small business owners like hardware storekeepers and freelancers. Inspired by a real experience of manual record struggles, it enables users to easily track customers, items owed, payment status, and due dates—all in one place. Built with React and styled with CSS, it ensures a responsive, user-friendly interface. Whether you're a shop owner or a solo fundi, PaySync helps you stay organized and avoid lost payments.Working on the backend rightnow",
       tech: ["HTML", "React", "CSS"],
+      liveLink:"https://paysync1.netlify.app/",
       github: "https://github.com/BakariJuma1/Debt-management-app-",
-      image: "/images/paysync.jpeg",
+      image: "/images/paysync.jpeg,json",
     },
   ];
 
