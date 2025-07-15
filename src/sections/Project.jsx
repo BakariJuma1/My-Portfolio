@@ -21,10 +21,10 @@ export default function Projects() {
       title: "PaySync",
       description:
         "PaySync is a lightweight debt management web app built for small business owners like hardware storekeepers and freelancers. Inspired by a real experience of manual record struggles, it enables users to easily track customers, items owed, payment status, and due dates—all in one place. Built with React and styled with CSS, it ensures a responsive, user-friendly interface. Whether you're a shop owner or a solo fundi, PaySync helps you stay organized and avoid lost payments.Working on the backend rightnow",
-      tech: ["HTML", "React", "CSS"],
+      tech: ["HTML", "React", "CSS","JSON"],
       liveLink:"https://paysync1.netlify.app/",
       github: "https://github.com/BakariJuma1/Debt-management-app-",
-      image: "/images/paysync.jpeg,json",
+      image: "/images/paysync.png",
     },
   ];
 
