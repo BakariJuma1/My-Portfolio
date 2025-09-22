@@ -31,7 +31,7 @@ export default function Projects() {
       description:
         "A website for  construction company to showcase their services, projects, and client testimonials. Clients can book for a consultation and the company can login and their data dynamically.Built with React and Tailwind CSS for a modern, responsive design and a light backend for the company to be able to add their services ,contact,portfolio and upload images dynamically ",
       tech:["React","Tailwind CSS","Python","Flask","PostgreSQL","Cloudinary"],
-      liveLink:"https://radamjaribu.netlify.app/",
+      liveLink:"https://radamjaribubuilders.netlify.app/",
       github:"",
       image:"/images/Radam.png"
     }
