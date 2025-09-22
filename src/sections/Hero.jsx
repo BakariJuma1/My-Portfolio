@@ -14,7 +14,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight break-words">
           <span className="inline-block">Hey, I'm</span>{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-400 dark:to-blue-300">
-            Bakari Juma
+            Bakari Isaac Juma
           </span>
         </h1>
         

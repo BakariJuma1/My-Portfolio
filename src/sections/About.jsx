@@ -25,6 +25,14 @@ export default function About() {
               My journey in tech started with a curiosity about how things work, which evolved into building applications that solve real-world challenges. I believe in writing clean, maintainable code that stands the test of time.
             </p>
           </div>
+          <a 
+            href="Isaac_juma_fullstack_role"
+            download
+            className="inline-block mt-8 px-6 py-3 text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+
+          >
+            Download Resume
+          </a>
         </div>
 
         {/* Tech Stack */}
