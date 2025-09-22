@@ -26,6 +26,15 @@ export default function Projects() {
       github: "https://github.com/BakariJuma1/Debt-management-app-",
       image: "/images/paysync.png",
     },
+    {
+      tittle:"Radamjaribu builders",
+      description:
+        "A website for a local construction company to showcase their services, projects, and client testimonials. Built with React and Tailwind CSS for a modern, responsive design.",
+      tech:["React","Tailwind CSS"],
+      liveLink:"https://radamjaribu.netlify.app/",
+      github:"",
+      image:"/images/Radam.png"
+    }
   ];
 
   return (
