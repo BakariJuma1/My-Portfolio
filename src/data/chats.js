@@ -18,7 +18,7 @@ export const projects = [
     image: "",
   },
   {
-    title: "SomaPoa — Bursary Management",
+    title: "SomaPoa: Bursary Management",
     description:
       "A fullstack bursary application system with role-based access control (student vs admin), JWT authentication, and a REST API for application state tracking and admin decisions.",
     tech: ["React", "Flask", "PostgreSQL", "JWT Auth", "SQLAlchemy"],
@@ -27,7 +27,7 @@ export const projects = [
     image: "/images/somapoa.png",
   },
   {
-    title: "PaySync — Debt Management",
+    title: "PaySync: Debt Management",
     description:
       "A financial dashboard for businesses to track customer debts, outstanding balances, and payment histories. Built with scalable backend APIs and reusable React components.",
     tech: ["React", "Flask", "SQLAlchemy", "PostgreSQL"],
@@ -59,10 +59,10 @@ export const experience = [
     role: "Freelance Software Engineer",
     company: "Barajubeats",
     location: "Nairobi, Kenya",
-    period: "Apr 2026 — Present",
+    period: "Apr 2026 - Present",
     tech: ["React", "Flask", "PostgreSQL", "M-Pesa Daraja", "Paystack", "Linux VPS", "Nginx", "Gunicorn"],
     points: [
-      "Designed and built a full-stack beat-selling platform generating revenue through digital product sales — sole developer from concept to production.",
+      "Designed and built a full-stack beat-selling platform generating revenue through digital product sales, as sole developer from concept to production.",
       "Integrated M-Pesa Daraja and Paystack for secure, real-time payment processing across multiple channels.",
       "Built a swipe-to-buy purchase flow that improved user conversion and simplified checkout.",
       "Deployed and maintains the app on a Linux VPS with Nginx and Gunicorn; monitors production logs and resolves live issues independently.",
@@ -73,13 +73,13 @@ export const experience = [
     role: "Software Engineer",
     company: "Phamatime",
     location: "Nairobi, Kenya",
-    period: "Sep 2025 — Present",
+    period: "Sep 2025 - Present",
     tech: ["React", "Flask", "PostgreSQL", "TailwindCSS", "M-Pesa Daraja", "Paystack"],
     points: [
       "Designed and built a full-stack B2B marketplace connecting pharmaceutical sales reps to hospitals, clinics, and solo doctors.",
       "Integrated M-Pesa Daraja and Paystack for subscription and access-fee payments with real-time transaction tracking.",
       "Built RESTful APIs for rep onboarding, facility listings, matching logic, authentication, and workflow automation.",
-      "Provides continuous technical support for a live platform with active users — bug fixes, feature updates, and system monitoring.",
+      "Provides continuous technical support for a live platform with active users: bug fixes, feature updates, and system monitoring.",
       "Led client onboarding and training for non-technical users as sole point of technical contact.",
     ],
   },
@@ -87,7 +87,7 @@ export const experience = [
     role: "Freelance Software Engineer",
     company: "Radam Jaribu Builders",
     location: "Kakamega, Kenya",
-    period: "Sep 2025 — Nov 2025",
+    period: "Sep 2025 - Nov 2025",
     tech: ["React", "Flask"],
     points: [
       "Designed, built, and deployed a production business website as sole developer; handed over to client on completion.",
@@ -99,7 +99,7 @@ export const experience = [
     role: "IT Support Intern",
     company: "Nairobi City Water & Sewerage Co.",
     location: "Nairobi, Kenya",
-    period: "Jan 2022 — Apr 2022",
+    period: "Jan 2022 - Apr 2022",
     tech: [],
     points: [
       "Automated routine system checks via scripting, reducing manual IT intervention time for the team.",
@@ -122,7 +122,7 @@ export const chats = [
     messages: [
       { id: 1, from: "visitor", text: "Hey Bakari, can you introduce yourself?", time: "10:30" },
       { id: 2, from: "bakari", text: "Hey! I'm Isaac Bakari Juma, a Full-Stack Software Engineer based in Nairobi, Kenya.", time: "10:31" },
-      { id: 3, from: "bakari", text: "I build and deploy production-grade web applications — real systems in healthcare, e-commerce, and business domains.", time: "10:31" },
+      { id: 3, from: "bakari", text: "I build and deploy production-grade web applications: real systems in healthcare, e-commerce, and business domains.", time: "10:31" },
       { id: 4, from: "visitor", text: "What kind of work do you do exactly?", time: "10:32" },
       { id: 5, from: "bakari", text: "I ship end-to-end systems using React and Flask, including payment integrations with M-Pesa Daraja and Paystack handling real-world transactions.", time: "10:32" },
       { id: 6, from: "bakari", text: "Strong in API development, frontend engineering, and Linux VPS deployment with Nginx and Gunicorn. I work directly with clients on live systems.", time: "10:33" },
@@ -147,7 +147,7 @@ export const chats = [
       { id: 5, from: "bakari", text: "Core is JavaScript and React on the frontend, Python with Flask on the backend, and PostgreSQL for data.", time: "09:13" },
       { id: 6, from: "bakari", text: "I also handle full production deployments on Linux VPS with Nginx and Gunicorn, and I've integrated M-Pesa Daraja and Paystack for real payment flows.", time: "09:14" },
       { id: 7, from: "visitor", text: "Anything new you're working with?", time: "09:15" },
-      { id: 8, from: "bakari", text: "I've been incorporating AI tools into my development workflow — using LLMs for debugging, code generation, and building smarter pipelines.", time: "09:16" },
+      { id: 8, from: "bakari", text: "I've been incorporating AI tools into my development workflow, using LLMs for debugging, code generation, and building smarter pipelines.", time: "09:16" },
     ],
   },
   {
@@ -164,7 +164,7 @@ export const chats = [
       { id: 2, from: "bakari", text: "Sure. Here's a full walkthrough of my roles:", time: "08:21" },
       { id: 3, from: "bakari", type: "experience", time: "08:21" },
       { id: 4, from: "visitor", text: "What kind of projects have you worked on professionally?", time: "08:28" },
-      { id: 5, from: "bakari", text: "Mostly B2B and B2C platforms — a beat-selling e-commerce app, a pharma marketplace, and a construction company site. All production systems with real users.", time: "08:29" },
+      { id: 5, from: "bakari", text: "Mostly B2B and B2C platforms: a beat-selling e-commerce app, a pharma marketplace, and a construction company site. All production systems with real users.", time: "08:29" },
       { id: 6, from: "bakari", text: "I've been sole developer on most of these, handling everything from architecture to deployment and post-launch support.", time: "08:30" },
     ],
   },
@@ -183,7 +183,7 @@ export const chats = [
       { id: 3, from: "bakari", type: "education", time: "15:01" },
       { id: 4, from: "visitor", text: "What did you study?", time: "15:05" },
       { id: 5, from: "bakari", text: "I have a BSc in Information Technology from Taita Taveta University, and completed a Full-Stack Web Development program at Moringa School in Nairobi.", time: "15:06" },
-      { id: 6, from: "bakari", text: "Moringa is where I really sharpened practical fullstack skills with React, Flask, and PostgreSQL — building real projects from day one.", time: "15:07" },
+      { id: 6, from: "bakari", text: "Moringa is where I really sharpened practical fullstack skills with React, Flask, and PostgreSQL, building real projects from day one.", time: "15:07" },
     ],
   },
   {
@@ -205,7 +205,7 @@ export const chats = [
       { id: 7, from: "bakari", type: "project", projectIndex: 4, time: "14:06" },
       { id: 8, from: "bakari", type: "project", projectIndex: 5, time: "14:07" },
       { id: 9, from: "visitor", text: "Any more on GitHub?", time: "14:08" },
-      { id: 10, from: "bakari", text: "Yes — check out github.com/BakariJuma1 for everything.", time: "14:08" },
+      { id: 10, from: "bakari", text: "Yes, check out github.com/BakariJuma1 for everything.", time: "14:08" },
     ],
   },
   {
@@ -222,9 +222,9 @@ export const chats = [
       { id: 2, from: "bakari", text: "You can find me on any of these:", time: "08:01" },
       { id: 3, from: "bakari", type: "contact-info", time: "08:01" },
       { id: 4, from: "visitor", text: "Are you currently available for work?", time: "08:03" },
-      { id: 5, from: "bakari", text: "Yes — available for freelance projects and full-time opportunities. I typically reply within 24 hours.", time: "08:04" },
+      { id: 5, from: "bakari", text: "Yes, available for freelance projects and full-time opportunities. I typically reply within 24 hours.", time: "08:04" },
       { id: 6, from: "visitor", text: "Can I send you a message right now?", time: "08:05" },
-      { id: 7, from: "bakari", text: "Go ahead — fill in below:", time: "08:06" },
+      { id: 7, from: "bakari", text: "Go ahead, fill in below:", time: "08:06" },
       { id: 8, from: "bakari", type: "contact-form", time: "08:07" },
     ],
   },
