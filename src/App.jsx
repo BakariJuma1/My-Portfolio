@@ -67,6 +67,14 @@ export default function App() {
     if (chatId) {
       const found = chats.find((c) => c.id === chatId);
       if (found) {
+        // Establish a sidebar entry before the chat so browser back works
+        const sidebarUrl = new URL(window.location.href);
+        sidebarUrl.searchParams.delete("chat");
+        window.history.replaceState({ view: "sidebar" }, "", sidebarUrl);
+        const chatUrl = new URL(window.location.href);
+        chatUrl.searchParams.set("chat", chatId);
+        window.history.pushState({ view: "chat", chatId }, "", chatUrl);
+
         setActiveChat(found);
         setMobileView("chat");
         setUnreadIds((prev) => {
@@ -75,7 +83,28 @@ export default function App() {
           return next;
         });
       }
+    } else {
+      window.history.replaceState({ view: "sidebar" }, "", window.location.href);
     }
+  }, []);
+
+  // Sync browser back/forward to React state
+  useEffect(() => {
+    const onPopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const chatId = params.get("chat");
+      if (chatId) {
+        const found = chats.find((c) => c.id === chatId);
+        if (found) {
+          setActiveChat(found);
+          setMobileView("chat");
+        }
+      } else {
+        setMobileView("sidebar");
+      }
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
   const handleSelect = (chat) => {
@@ -87,14 +116,13 @@ export default function App() {
       return next;
     });
 
-    // Update URL for shareable links
     const url = new URL(window.location.href);
     url.searchParams.set("chat", chat.id);
-    window.history.pushState({}, "", url);
+    window.history.pushState({ view: "chat", chatId: chat.id }, "", url);
   };
 
   const handleBack = () => {
-    setMobileView("sidebar");
+    window.history.back();
   };
 
   const handleToggleTheme = () => {

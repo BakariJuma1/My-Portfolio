@@ -140,7 +140,7 @@ export default function ChatWindow({ chat, onBack }) {
             color: "var(--text-sub)",
           }}
         >
-          This is a portfolio simulation — browse the chats above
+          This is a portfolio simulation. Browse the chats above.
         </div>
       </div>
 
