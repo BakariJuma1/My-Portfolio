@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import MessageBubble from "./MessageBubble";
 import TypingIndicator from "./TypingIndicator";
 import DateSeparator from "./DateSeparator";
+import ProfilePanel from "./ProfilePanel";
 import Avatar from "./Avatar";
 import { projects } from "../data/chats";
 import { playMessageSound } from "../utils/sound";
@@ -10,12 +11,14 @@ export default function ChatWindow({ chat, onBack }) {
   const [visibleMessages, setVisibleMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
   const [headerStatus, setHeaderStatus] = useState(chat.subtitle);
+  const [showProfile, setShowProfile] = useState(false);
   const bottomRef = useRef(null);
 
   useEffect(() => {
     setVisibleMessages([]);
     setIsTyping(false);
     setHeaderStatus(chat.subtitle);
+    setShowProfile(false);
 
     const timers = [];
     let totalDelay = 0;
@@ -61,17 +64,18 @@ export default function ChatWindow({ chat, onBack }) {
   }, [visibleMessages, isTyping]);
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full relative">
       {/* Header */}
       <div
-        className="flex items-center gap-3 px-4 py-3 border-b"
+        className="flex items-center gap-3 px-4 py-3 border-b cursor-pointer select-none"
         style={{
           backgroundColor: "var(--panel)",
           borderColor: "var(--divider)",
         }}
+        onClick={() => chat.useProfilePhoto && setShowProfile(true)}
       >
         <button
-          onClick={onBack}
+          onClick={(e) => { e.stopPropagation(); onBack(); }}
           className="md:hidden p-1 -ml-1 transition-colors"
           style={{ color: "var(--text-muted)" }}
           aria-label="Back"
@@ -108,10 +112,7 @@ export default function ChatWindow({ chat, onBack }) {
       </div>
 
       {/* Messages */}
-      <div
-        className="flex-1 overflow-y-auto px-4 py-4"
-        style={{ backgroundColor: "var(--chat-bg)" }}
-      >
+      <div className="flex-1 overflow-y-auto px-4 py-4 wa-chat-bg">
         <div className="max-w-3xl mx-auto">
           <DateSeparator label="Today" />
           <div className="space-y-0.5">
@@ -142,6 +143,11 @@ export default function ChatWindow({ chat, onBack }) {
           This is a portfolio simulation — browse the chats above
         </div>
       </div>
+
+      {/* Profile panel — slides over the chat */}
+      {showProfile && (
+        <ProfilePanel onClose={() => setShowProfile(false)} />
+      )}
     </div>
   );
 }
