@@ -1,37 +1,64 @@
 @import "tailwindcss";
 
+/* ── WhatsApp dark theme (default) ── */
+:root {
+  --bg: #111b21;
+  --panel: #202c33;
+  --hover: #202c33;
+  --active: #2a3942;
+  --chat-bg: #0b141a;
+  --bubble-in: #202c33;
+  --bubble-out: #005c4b;
+  --text: #e9edef;
+  --text-sub: #8696a0;
+  --text-muted: #aebac1;
+  --green: #00a884;
+  --green-dark: #017a62;
+  --divider: #2a3942;
+  --input: #2a3942;
+  --card: #1a2c36;
+  --card-hover: #243340;
+  --icon-bg: #111b21;
+  --check: #53bdeb;
+}
+
+/* ── WhatsApp light theme ── */
+html.light {
+  --bg: #f0f2f5;
+  --panel: #ffffff;
+  --hover: #f5f6f6;
+  --active: #e9edef;
+  --chat-bg: #efeae2;
+  --bubble-in: #ffffff;
+  --bubble-out: #d9fdd3;
+  --text: #111b21;
+  --text-sub: #667781;
+  --text-muted: #54656f;
+  --green: #008069;
+  --green-dark: #006b57;
+  --divider: #e9edef;
+  --input: #f0f2f5;
+  --card: #ffffff;
+  --card-hover: #f0f2f5;
+  --icon-bg: #e9edef;
+  --check: #53bdeb;
+}
+
 @layer base {
-  html,
-  body {
-    @apply m-0 p-0 font-sans bg-gray-50 text-gray-900 dark:bg-gray-800 dark:text-white;
+  html, body, #root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
   }
 }
 
 @layer utilities {
-  @keyframes loading {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(150%);
-    }
-  }
-
-  .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
-  }
-
-  @keyframes blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .animate-blink {
-    animation: blink 3.8s step-end infinite;
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
