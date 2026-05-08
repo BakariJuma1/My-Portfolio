@@ -28,7 +28,7 @@ export default function MessageBubble({ message, projects }) {
       case "resume":
         return (
           <a
-            href="/Isaac_juma_fullstack_role.pdf"
+            href="/Isaac_Bakari_Juma_CV.pdf"
             download
             className="flex items-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium text-white transition-colors"
             style={{ backgroundColor: "var(--green)" }}

@@ -1,23 +1,5 @@
 export const projects = [
   {
-    title: "Barajubeats",
-    description:
-      "A full-stack beat-selling platform with M-Pesa Daraja and Paystack integrations, a swipe-to-buy purchase flow, and automated email notifications. Deployed on Linux VPS with Nginx and Gunicorn.",
-    tech: ["React", "Flask", "PostgreSQL", "M-Pesa Daraja", "Paystack", "Nginx", "Gunicorn"],
-    liveLink: "",
-    github: "",
-    image: "",
-  },
-  {
-    title: "Phamatime",
-    description:
-      "A full-stack B2B marketplace connecting pharmaceutical sales reps to hospitals, clinics, and doctors. Includes M-Pesa and Paystack subscription payments, rep onboarding, and workflow automation APIs.",
-    tech: ["React", "Flask", "PostgreSQL", "TailwindCSS", "M-Pesa Daraja", "Paystack"],
-    liveLink: "",
-    github: "",
-    image: "",
-  },
-  {
     title: "SomaPoa: Bursary Management",
     description:
       "A fullstack bursary application system with role-based access control (student vs admin), JWT authentication, and a REST API for application state tracking and admin decisions.",
@@ -44,13 +26,13 @@ export const projects = [
     image: "/images/permit-tracker.png",
   },
   {
-    title: "Radamjaribu Builders",
+    title: "PesaLense",
     description:
-      "A production business website for a construction company with dynamic content management, service showcase, and client booking. Handed over to client with ongoing maintenance.",
-    tech: ["React", "Flask", "PostgreSQL", "Cloudinary"],
-    liveLink: "https://radamjaribubuilders.netlify.app/",
+      "A privacy-first M-Pesa statement analyzer that parses uploaded statements entirely in-memory (never stored), generates a Financial Health Score across five dimensions, categorizes spending, and delivers AI-powered insights via Groq/Llama 3 to help users understand and improve their financial habits.",
+    tech: ["React", "Flask", "Groq (Llama 3)", "Python"],
+    liveLink: "https://pesalens-rust.vercel.app/",
     github: "",
-    image: "/images/Radam.png",
+    image: "",
   },
 ];
 
@@ -93,6 +75,20 @@ export const experience = [
       "Designed, built, and deployed a production business website as sole developer; handed over to client on completion.",
       "Provides ongoing maintenance, updates, and technical support post-deployment.",
       "Delivered IT support: maintained 20+ devices, reduced downtime by 30%, resolved 90%+ of issues without escalation.",
+    ],
+  },
+  {
+    role: "Freelance Software Engineer",
+    company: "Home Care Nurse Booking Platform",
+    location: "Kiambu County, Kenya",
+    period: "2026 - Present",
+    tech: ["React", "Flask", "PostgreSQL", "Groq (Llama 3)", "Paystack", "Africa's Talking", "Gmail SMTP"],
+    points: [
+      "Built a production-grade home nursing care booking platform as a solo freelance project, covering architecture, backend, frontend, and deployment.",
+      "Integrated Groq/Llama 3 to auto-enhance plain service descriptions written by the nurse into professional, patient-friendly copy on save.",
+      "Implemented Paystack deposit collection (10% of service price) on booking confirmation to eliminate ghost bookings before the nurse travels.",
+      "Built a real-time admin dashboard for the nurse to manage services and view bookings, with WhatsApp and email notifications on each confirmed booking.",
+      "Designed a booking flow validated end-to-end with Marshmallow schemas; all patient data is isolated per booking with no user account required.",
     ],
   },
   {
@@ -153,11 +149,11 @@ export const chats = [
   {
     id: "experience",
     name: "Work Experience",
-    subtitle: "2 active roles",
+    subtitle: "3 active roles",
     avatar: "WX",
     avatarColor: "#b45309",
     status: "online",
-    lastMessage: "Currently at Barajubeats and Phamatime.",
+    lastMessage: "Currently at Barajubeats, Phamatime, and Nurse Booking.",
     time: "08:30",
     messages: [
       { id: 1, from: "visitor", text: "Tell me about your work experience.", time: "08:20" },
@@ -189,11 +185,11 @@ export const chats = [
   {
     id: "projects",
     name: "Projects",
-    subtitle: "6 projects",
+    subtitle: "4 projects",
     avatar: "PR",
     avatarColor: "#0284c7",
     status: "online",
-    lastMessage: "Barajubeats, Phamatime, SomaPoa...",
+    lastMessage: "SomaPoa, PaySync, PesaLense...",
     time: "Yesterday",
     messages: [
       { id: 1, from: "visitor", text: "Show me some of your work.", time: "14:00" },
@@ -202,10 +198,8 @@ export const chats = [
       { id: 4, from: "bakari", type: "project", projectIndex: 1, time: "14:03" },
       { id: 5, from: "bakari", type: "project", projectIndex: 2, time: "14:04" },
       { id: 6, from: "bakari", type: "project", projectIndex: 3, time: "14:05" },
-      { id: 7, from: "bakari", type: "project", projectIndex: 4, time: "14:06" },
-      { id: 8, from: "bakari", type: "project", projectIndex: 5, time: "14:07" },
-      { id: 9, from: "visitor", text: "Any more on GitHub?", time: "14:08" },
-      { id: 10, from: "bakari", text: "Yes, check out github.com/BakariJuma1 for everything.", time: "14:08" },
+      { id: 7, from: "visitor", text: "Any more on GitHub?", time: "14:06" },
+      { id: 8, from: "bakari", text: "Yes, check out github.com/BakariJuma1 for everything.", time: "14:06" },
     ],
   },
   {
