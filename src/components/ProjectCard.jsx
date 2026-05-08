@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function ProjectCard({ project }) {
+  const [expanded, setExpanded] = useState(false);
   return (
     <div
       className="rounded-xl overflow-hidden w-72 border"
@@ -29,11 +32,18 @@ export default function ProjectCard({ project }) {
           {project.title}
         </h4>
         <p
-          className="text-xs leading-relaxed mb-3 line-clamp-2"
+          className={`text-xs leading-relaxed mb-1 ${expanded ? "" : "line-clamp-2"}`}
           style={{ color: "var(--text-sub)" }}
         >
           {project.description}
         </p>
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="text-[10px] font-medium mb-2"
+          style={{ color: "var(--green)" }}
+        >
+          {expanded ? "Read less" : "Read more"}
+        </button>
 
         <div className="flex flex-wrap gap-1 mb-3">
           {project.tech.slice(0, 3).map((t) => (

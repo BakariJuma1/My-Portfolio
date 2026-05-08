@@ -32,7 +32,7 @@ export const projects = [
     tech: ["React", "Flask", "Groq (Llama 3)", "Python"],
     liveLink: "https://pesalens-rust.vercel.app/",
     github: "",
-    image: "",
+    image: "/images/pesalense.png",
   },
 ];
 
